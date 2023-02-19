@@ -1,0 +1,11 @@
+Các cách xử lý đa màn hình trên React Native: 
+
+- Hạn chế pix cứng độ dài, padding, margin của một view, thay vào đó sử dụng phần trăm.
+- Sử dụng fexbox layout 
+- set min width và max width. Điều này giúp cover tốt được các màn hình cỡ XS hoặc XL.
+- Sử dụng Dimension API được cung cấp bởi React Native
+- Sử dụng KeyboardAvoidingView để tính toán input khi mở phím ảo trên bất kỳ nền tảng nào.
+- style theo từng hệ điều hành cụ thể (ios, android)
+- Sử dụng các fie riêng biệt nếu có nhiều code cần sử dụng riêng cho từng nền tảng
+ví dụ: button.android.ts, button.ios.ts
+
